@@ -1,44 +1,28 @@
-<div align = center >
+# Velyafy
+<p align="center">
+    
+![GitHub Cover](https://raw.githubusercontent.com/Wanja01YT/velyafy/main/github-banner.png)
+    
+</p>
 
-# MrBeastify
+![Static Badge](https://img.shields.io/badge/chromium-1.0-blue?logo=GoogleChrome)
+![Static Badge](https://img.shields.io/badge/firefox-1.0-orange?logo=Firefox)
+![Static Badge](https://img.shields.io/badge/license-GPL_3.0-lightgrey)
 
-Is your browser experience boring? Are you having  
+<div align = center>
+Is your browser experience boring? Are you having<br>
 trouble finding engaging click-baity videos?
 
 **Fear no more.**
 
 This extension adds the famous  
-youtuber **MrBeast** to every thumbnail.
-
-[![Button Download Firefox]][Download Firefox]  
-[![Button Download Chrome]][Download Chrome]  
-[![Button Download Edge]][Download Edge]
-
+youtuber [**Velya**](https://www.youtube.com/@velya) to every thumbnail.
 </div>
 
-## Notes
+## Downloads
 
-- This extension should be compatible with any Firefox / Chromium based browser.
-- This extension was inspired by **[Unnecessary Inventions][UI YouTube]** and his **[Website][UI Website]**.
-- This extension is unofficial and not affiliated with MrBeast or YouTube.
+- [Chromium](https://github.com/Wanja01YT/standoff2-scratch/releases/download/source-code/standoff2-scratch-win64.zip)
+- [Firefox](https://github.com/Wanja01YT/standoff2-scratch/releases/download/source-code/standoff2-scratch-macos.zip)
 
-## Microsoft Edge <a id="microsoftedge"></a>
 
-Microsoft Edge support has been ended, and the extension has been delisted. This is because Edge is consistently the slowest at reviewing extensions, constantly rejects my submissions with vague reasons why, and are allround terrible. Download the Chrome version instead.
-
-[![Button Download Chrome]][Download Chrome]  
-
-<!----------------------------------------------------------------------------->
-
-[Button Download Firefox]: https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logoColor=white&logo=Firefox
-
-[Button Download Chrome]: https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logoColor=white&logo=GoogleChrome
-
-[Button Download Edge]: https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logoColor=white&logo=MicrosoftEdge&color=grey
-
-[Download Firefox]: http://addons.mozilla.org/en-GB/firefox/addon/youtube-mrbeastify/
-[Download Chrome]: http://chrome.google.com/webstore/detail/youtube-mrbeastify/dbmaeobgdodeimjdjnkipbfhgeldnmeb
-[Download Edge]: #microsoftedge
-
-[UI YouTube]: http://www.youtube.com/@UnnecessaryInventions
-[UI Website]: http://www.mrbeastify.com/
+#### Thanks to MagicJinn for creating the original extension as a base for this project.

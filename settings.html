@@ -3,58 +3,92 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-size: 16px;
-            font-family: Arial, sans-serif;
-            width: 300px;
-            background-color: #08B0D5;
+            background: linear-gradient(to bottom, #E7A728, #E15B1D);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #FFFFFF;
         }
 
-        .kofi-icon {
-            position: absolute;
-            right: 10px;
-            cursor: pointer;
+        .popup-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: rgba(201, 121, 36, 0.6);
+            /* Darker shade of orange with 60% opacity */
         }
 
-        .fancy-checkbox {
-            position: relative;
-            padding-left: 30px;
-            cursor: pointer;
+        #extension-title {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .hidden-checkbox {
-            position: absolute;
-            opacity: 0;
+        /* Customize Bootstrap toggle switch */
+        .custom-control-input:checked~.custom-control-label::before {
+            border-color: #C44C19;
+            background-color: #C44C19;
         }
 
-        .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 20px;
-            width: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 3px;
+        .custom-control-input:focus~.custom-control-label::before {
+            box-shadow: 0 0 0 0.2rem rgba(196, 76, 25, 0.25);
         }
 
-        .checkbox-text {
-            vertical-align: bottom;
+        .custom-control-input:active~.custom-control-label::before {
+            background-color: #C44C19;
+            border-color: #C44C19;
         }
 
-        /* Checked state */
-        .hidden-checkbox:checked+.checkmark:after {
-            content: "";
-            position: absolute;
-            display: block;
-            left: 6px;
-            top: 2px;
-            width: 6px;
-            height: 12px;
-            border: solid #333;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
+        .custom-control-input:checked:focus~.custom-control-label::before {
+            box-shadow: 0 0 0 0.2rem rgba(196, 76, 25, 0.25);
+        }
+
+        .custom-control-input:checked:active~.custom-control-label::before {
+            background-color: #C44C19;
+            border-color: #C44C19;
+        }
+
+        .custom-control-label::before {
+            border-radius: 10px;
+        }
+
+        /* Make all text white */
+        label,
+        input,
+        h1 {
+            color: #FFFFFF;
+        }
+
+        /* Customize form control input */
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+        }
+
+        .form-control:focus {
+            border-color: #C44C19;
+            box-shadow: 0 0 0 0.2rem rgba(196, 76, 25, 0.25);
+        }
+
+        /* Change text selection color */
+        ::selection {
+            background: #C44C19;
+            color: #FFFFFF;
+        }
+
+        ::-moz-selection {
+            background: #C44C19;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -62,36 +96,32 @@
 <body>
     <div class="popup-container">
         <h1 id="extension-title">TITLE Options</h1>
-        
-        <!-- Fancy Checkbox with Custom Styles -->
-        <label class="fancy-checkbox">
-            <input type="checkbox" id="disableExtension" class="hidden-checkbox">
-            <span class="checkmark"></span>
-            <span class="checkbox-text">Extension Enabled</span>
-        </label>
 
-        <br><br>
+        <!-- Toggle Switch with Bootstrap -->
+        <div class="form-group">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="disableExtension">
+                <label class="custom-control-label" for="disableExtension">Extension Enabled</label>
+            </div>
+        </div>
 
         <!-- Appear Chance Input -->
-        <label>
-            Appear Chance (%):
-            <input type="number" id="appearChance" min="0" max="100" step="5" />
-        </label>
-
-        <br><br>
+        <div class="form-group">
+            <label for="appearChance">Appear Chance (%):</label>
+            <input type="number" class="form-control" id="appearChance" min="0" max="100" step="5" />
+        </div>
 
         <!-- Flip Chance Input -->
-        <label>
-            Flip Chance (%):
-            <input type="number" id="flipChance" min="0" max="100" step="5" />
-        </label>
-
-        <a href="https://ko-fi.com/magicjinn" target="_blank" class="kofi-icon">
-                        <img src="https://ko-fi.com/favicon.ico" width="24" height="24">
-        </a>
+        <div class="form-group">
+            <label for="flipChance">Flip Chance (%):</label>
+            <input type="number" class="form-control" id="flipChance" min="0" max="100" step="5" />
+        </div>
     </div>
 
-    <script src="settings.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/settings.js"></script>
 </body>
 
 </html>

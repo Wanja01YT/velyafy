@@ -5,8 +5,8 @@
     
 </p>
 
-![Static Badge](https://img.shields.io/badge/chromium-1.0-blue?logo=GoogleChrome)
-![Static Badge](https://img.shields.io/badge/firefox-1.0-orange?logo=Firefox)
+[![Static Badge](https://img.shields.io/badge/chromium-1.0-blue?logo=GoogleChrome)](https://github.com/Wanja01YT/velyafy/releases/download/release/Chromium.zip)
+[![Static Badge](https://img.shields.io/badge/firefox-1.0-orange?logo=Firefox)](https://github.com/Wanja01YT/velyafy/releases/download/release/Firefox.zip)
 ![Static Badge](https://img.shields.io/badge/license-GPL_3.0-lightgrey)
 
 <div align = center>
@@ -21,8 +21,8 @@ youtuber [**Velya**](https://www.youtube.com/@velya) to every thumbnail.
 
 ## Downloads
 
-- [Chromium](https://github.com/Wanja01YT/standoff2-scratch/releases/download/source-code/standoff2-scratch-win64.zip)
-- [Firefox](https://github.com/Wanja01YT/standoff2-scratch/releases/download/source-code/standoff2-scratch-macos.zip)
+- [Chromium](https://github.com/Wanja01YT/velyafy/releases/download/release/Chromium.zip)
+- [Firefox](https://github.com/Wanja01YT/velyafy/releases/download/release/Firefox.zip)
 
 
 #### Thanks to MagicJinn for creating the original extension as a base for this project.
